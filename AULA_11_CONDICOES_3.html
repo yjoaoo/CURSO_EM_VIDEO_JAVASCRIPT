@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando condiçôes para pais</title>
+</head>
+
+<body>
+    <h1>Pappers Please</h1>
+    Veficando seu pais: <input type="String" name="txt_pais" id="txt_pais">
+    <input type="button" value="Verificar" onclick="verificando()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificando(){
+            var txt_nome_pais = window.document.getElementById("txt_pais")
+            var res = window.document.getElementById("res")
+            var pais = (txt_nome_pais.value)
+            res.innerHTML = `<p>O pais que você digitou é ${pais}</p>`
+            if (pais != "brasil"){
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+            res.innerHTML += `Quem leu é lindo :)`
+        }
+    </script>
+
+    
+</body>
+</html>

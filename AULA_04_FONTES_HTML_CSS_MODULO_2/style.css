@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* medidas absolutas
+    cm (centimetro), mm(melimetro), in(polegada), recomendada = px(pixel), pt(ponto), pc(paica)
+    
+    medidas relativas 
+    recomendada = em, ex, rem, vw, vh, % 
+    16 pixels geralmente = 1em
+    */
+    
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    /* shorthand font
+    font-style -> font-weight -> font-size -> font-family
+    */
+    /*font: italic bolder 3em "work Sans", sans-serif; */
+
+    /* font-weight: = normal, bold, bolder, lighter ou 100 até 900
+    /* weight(peso), width(largura), heigth(altura) */
+}
+
+h2 {
+    font: bold 2em "work Sans"
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links / pseudo-class / pseudo-element</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited { /* Link Visitado (a:visited):*/
+            color: darkred;
+        }
+
+        a:hover { /* Link ao Passar o Mouse (a:hover):*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active { /* Link Ativo (a:active): */
+            color: yellow;
+        }
+
+        a::after { /* Conteúdo Adicional Após o Link (a::after): */
+            content: " [link]";
+            text-decoration: none;
+            font-weight: bold;
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-nascimento-6573042a9/?trk=opento_sprofile_details" target="_blank" rel="prev">Repositorio GitHub</a></li>
+        <li><a href="https://github.com/yjoaoo" target="_blank" rel="prev">Linkedin</a></li>
+    </ul>
+</body>
+</html>
